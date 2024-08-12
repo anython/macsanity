@@ -8,7 +8,8 @@ A simple library to convert MAC-addresses to different formats.
 
 # Run the following to see how mac_formatter is used directly in your terminal
 
-`````mac-formatter --help
+`````bash
+mac-formatter --help
 `````
 Example usage:
 `````bash
