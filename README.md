@@ -6,14 +6,18 @@ A simple library to convert MAC-addresses to different formats.
 
 ### How to use in terminal(cli).
 
-Run the following to see how mac_formatter is used directly in your terminal
+# Run the following to see how mac_formatter is used directly in your terminal
+
 `````mac-formatter --help
 `````
 Example usage:
-`````mac-formatter 01ab02cd03ef -f dot
+`````bash
+mac-formatter 01ab02cd03ef -f dot
 `````
 output:
+`````bash
 01ab.02cd.03ef
+`````
 
 ### How to use in your code.
 
