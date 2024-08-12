@@ -1,5 +1,5 @@
 import argparse
-from mac_formatter import MacFormatter
+from .mac_formatter import MacFormatter
 
 def main():
     parser = argparse.ArgumentParser(description="Format MAC addresses in various styles.")
