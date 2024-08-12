@@ -1,10 +1,21 @@
-mac_format
+mac-formatter
 ======
 A simple library to convert MAC-addresses to different formats.
 <br />
 <hr>
 
-### How
+### How to use in terminal(cli).
+
+Run the following to see how mac_formatter is used directly in your terminal
+`````mac_formatter --help
+`````
+Example usage:
+`````mac_formatter 01ab02cd03ef -f dot
+`````
+output:
+01ab.02cd.03ef
+
+### How to use in your code.
 
 `````pycon
 from mac_formatter import MacFormatter
@@ -27,7 +38,7 @@ output:
 01ab02cd03ef
 `````
 <hr>
-MAC-addresses is converted to lowercase by default, for uppercase use .upper()
+
 <hr style="border-top: 3px solid rgba(255, 255, 255, 0.2);">
 ---
 
