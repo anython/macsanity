@@ -2,8 +2,8 @@ import re
 
 class MacFormatter:
     def __init__(self, mac_address):
-        self.mac = ''.join(re.findall(r'[0-9a-f]', mac_address.lower()))
-        if not re.match(r'^[0-9a-f]{12}$', self.mac):
+        self.mac = ''.join(re.findall(r'[0-9a-fA-F]', mac_address))
+        if not re.match(r'^[0-9a-fA-F]{12}$', self.mac):
             raise ValueError("Invalid MAC address format. Insert 12 hexadecimal characters/digits in any format.")
 
 
