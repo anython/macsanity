@@ -14,7 +14,7 @@ options:
 
   -h, --help: show this help message and exit
 
-  -f, --format: {colon,dot,line,space,blank}, The format to use. If not specified, all formats will be printed.
+  -f, --format: {colon,dot,line,twoline,space,blank}, The format to use. If not specified, all formats will be printed.
 
   -u, --uppercase: Prints the MAC address in uppercase.
 

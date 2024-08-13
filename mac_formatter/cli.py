@@ -4,7 +4,7 @@ from .mac_formatter import MacFormatter
 def main():
     parser = argparse.ArgumentParser(description="Format MAC addresses in various styles.")
     parser.add_argument("mac_address", type=str, help="The MAC address to format")
-    parser.add_argument("-f", "--format", choices=["colon", "dot", "line", "space", "blank"], 
+    parser.add_argument("-f", "--format", choices=["colon", "dot", "line", "twoline", "space", "blank"], 
                         help="The format to use. If not specified, all formats will be printed.")
     parser.add_argument("-u", "--uppercase", action="store_true", help="Prints the MAC address in uppercase.")
     parser.add_argument("-l", "--lowercase", action="store_true", help="Prints the MAC address in lowercase.")
@@ -23,6 +23,8 @@ def main():
             print(format_mac_output(formatter.dot))
         elif args.format == "line":
             print(format_mac_output(formatter.line))
+	elif args.format == "twoline":
+            print(format_mac_output(formatter.twoline))
         elif args.format == "space":
             print(format_mac_output(formatter.space))
         elif args.format == "blank":
