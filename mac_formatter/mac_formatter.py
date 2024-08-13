@@ -50,7 +50,9 @@ class MacFormatter:
     @property
     def blank(self):
         return self.mac
-
+    
     @property
     def twoline(self):
         return self.format_mac('-', 4, 2)
+
+

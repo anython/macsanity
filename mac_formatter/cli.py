@@ -23,7 +23,7 @@ def main():
             print(format_mac_output(formatter.dot))
         elif args.format == "line":
             print(format_mac_output(formatter.line))
-	elif args.format == "twoline":
+        elif args.format == "twoline":
             print(format_mac_output(formatter.twoline))
         elif args.format == "space":
             print(format_mac_output(formatter.space))
