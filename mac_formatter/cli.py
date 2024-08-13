@@ -15,7 +15,7 @@ def main():
     parser.add_argument(
         '-f', '--format',
         type=str,
-        choices=['colon', 'dot', 'dash', 'ddash', 'space', 'blank', 'binary', 'encoded', 'eui64', 'bpf', 'reverse'],
+        choices=['colon', 'dot', 'dash', 'ddash', 'space', 'blank', 'binary', 'compact', 'eui64', 'bpf', 'reverse'],
         help=(
             "The format to use. If not specified, all formats will be printed.\n"
             "Available formats:\n"
@@ -26,7 +26,7 @@ def main():
             "  space       : Space-separated format, e.g., ab 12 cd 34 ef 56.\n"
             "  blank       : Continuous string with no delimiters, e.g., ab12cd34ef56.\n"
             "  binary      : Binary format, e.g., 10101011 00010010 11001101 00110100 11101111 01010110.\n"
-            "  encoded     : Base64 encoded format, e.g., qXLNTq9W.\n"
+            "  compact     : Base64 encoded format, e.g., qXLNTq9W.\n"
             "  eui64       : Cisco EUI-64 format, e.g., ab12.cd34.fffe.ef56.\n"
             "  bpf         : BPF format with each byte prefixed by '\\x', e.g., \\xab\\x12\\xcd\\x34\\xef\\x56.\n"
             "  reverse     : Reverse byte order, e.g., 56ef34cd12ab."
@@ -69,6 +69,8 @@ def main():
             print(format_mac_output(formatter.binary))
         elif args.format == "compact":
             print(format_mac_output(formatter.compact))
+        elif args.format == "eui64":
+            print(format_mac_output(formatter.eui64))
         elif args.format == "bpf":
             print(format_mac_output(formatter.bpf))
         elif args.format == "reverse":
@@ -82,6 +84,7 @@ def main():
         print(f'blank: {format_mac_output(formatter.blank)}')
         print(f'binary: {format_mac_output(formatter.binary)}')
         print(f'compact: {format_mac_output(formatter.compact)}')
+        print(f'eui64: {format_mac_output(formatter.eui64)}')
         print(f'bpf: {format_mac_output(formatter.bpf)}')
         print(f'reverse: {format_mac_output(formatter.reverse)}')
 

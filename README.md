@@ -24,10 +24,9 @@ options:
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**space**       : Space-separated format, e.g., ab 12 cd 34 ef 56.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**blank**       : Continuous string with no delimiters, e.g., ab12cd34ef56.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**binary**      : Binary format, e.g., 10101011 00010010 11001101 00110100 11101111 01010110.<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**encoded**     : Base64 encoded format, e.g., qXLNTq9W.<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**compact**     : Base64 encoded format, e.g., qXLNTq9W.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**eui64**       : Cisco EUI-64 format, e.g., ab12.cd34.fffe.ef56.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**bpf**         : BPF format with each byte prefixed by '\\x', e.g., \\xab\\x12\\xcd\\x34\\xef\\x56.<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**mixed**       : Mixed separator format, e.g., AB:12-CD-34.EF:56.<br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**reverse**     : Reverse byte order, e.g., 56ef34cd12ab.<br>
       <br>
   -u, --uppercase: Prints the MAC address in uppercase.
@@ -83,6 +82,7 @@ ab:cd:ef:12:34:56
 abcdef123456
 10101011 11001101 11101111 00010010 00110100 01010110
 q83vEjRW
+ab12.cd34.fffe.ef56
 \xab\xcd\xef\x12\x34\x56
 654321fedcba
 `````
