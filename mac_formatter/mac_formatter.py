@@ -72,11 +72,12 @@ class MacFormatter:
         """Returns MAC address encoded in Base64 format (e.g., qXLNTq9W)."""
         mac_bytes = bytes.fromhex(self.mac)
         return base64.b64encode(mac_bytes).decode('utf-8')
-
+    
     @property
     def eui64(self):
         """Returns MAC address in Cisco EUI-64 format, with 'fffe' inserted in the middle (e.g., ab12.cd34.fffe.ef56)."""
-        return self.format_mac('.', 4, 0)
+        eui64_mac = f"{self.mac[:6]}fffe{self.mac[6:]}"
+        return '.'.join([eui64_mac[i:i + 4] for i in range(0, len(eui64_mac), 4)])
 
     @property
     def bpf(self):
