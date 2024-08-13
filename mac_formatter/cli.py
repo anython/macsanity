@@ -33,6 +33,7 @@ def main():
         print(format_mac_output(formatter.colon))
         print(format_mac_output(formatter.dot))
         print(format_mac_output(formatter.line))
+        print(format_mac_output(formatter.twoline))
         print(format_mac_output(formatter.space))
         print(format_mac_output(formatter.blank))
 
