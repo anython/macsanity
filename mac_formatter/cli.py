@@ -22,7 +22,7 @@ def main():
             "  colon       : Colon-separated format, e.g., ab:12:cd:34:ef:56.\n"
             "  dot         : Dot notation, e.g., abcd.ef12.3456.\n"
             "  dash        : Hyphen-separated format, e.g., ab-12-cd-34-ef-56.\n"
-            "  ddash  : Double-dash-separated format, e.g., ab12-cd34-ef56.\n"
+            "  ddash       : Double-dash-separated format, e.g., ab12-cd34-ef56.\n"
             "  space       : Space-separated format, e.g., ab 12 cd 34 ef 56.\n"
             "  blank       : Continuous string with no delimiters, e.g., ab12cd34ef56.\n"
             "  binary      : Binary format, e.g., 10101011 00010010 11001101 00110100 11101111 01010110.\n"
