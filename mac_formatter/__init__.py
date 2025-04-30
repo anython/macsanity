@@ -1,5 +1,6 @@
-from .mac_formatter import MacFormatter
+from .mac_formatter import MacFormatter, convert_macs_in_file
 
 __all__ = [
-    'MacFormatter',  
+    'MacFormatter',
+    'convert_macs_in_file',
 ]
