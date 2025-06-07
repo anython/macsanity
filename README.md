@@ -119,6 +119,6 @@ ab12.cd34.fffe.ef56
 
 <hr>
 <p align="center">
-  <i>macsanity is proudly built by <strong>thamuppet</strong>.</i><br />
+  <i>macsanity is proudly built by <strong>anython</strong>.</i><br />
   Because someone had to.
 </p>
