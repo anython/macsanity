@@ -3,7 +3,7 @@ import base64
 import asyncio
 from typing import Optional
 
-class MacFormatter:
+class MacSanity:
     r"""
     A class to format MAC addresses into various notations.
 

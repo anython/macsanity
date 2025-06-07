@@ -1,6 +1,6 @@
 import argparse
 import sys
-from .mac_formatter import MacFormatter, convert_macs_in_file
+from .macsanity import MacSanity, convert_macs_in_file
 
 def main():
     help_dict = {
@@ -21,7 +21,7 @@ def main():
     available_formats = list(help_dict.keys())
 
     parser = argparse.ArgumentParser(
-        description="macinsanity — Format MAC addresses in any style you can imagine. Or fear."
+        description="macsanity — Format MAC addresses in any style you can imagine. Or fear."
     )
 
     group = parser.add_mutually_exclusive_group(required=True)
@@ -69,7 +69,7 @@ def main():
             sys.exit(1)
         convert_macs_in_file(args.file, target_format=args.format)
     else:
-        formatter = MacFormatter(args.mac_address)
+        formatter = MacSanity(args.mac_address)
         if args.format:
             result = getattr(formatter, args.format, None)
             if result is not None:
