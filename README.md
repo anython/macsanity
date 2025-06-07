@@ -7,21 +7,24 @@ A dangerously friendly tool to convert MAC addresses into whatever weird format 
 <h2 align="center">🧵 Our Story</h2>
 
 <p align="center">
-  macsanity began as a failed compost popsicle startup - under the name Turdvendor.
-  Our goal was to save the earth — one regrettable dessert at a time.
+  macinsanity started as an idea for compostable popsicles. </br>
+  The working title was <strong>TurdVendor</strong>. </br>
+  Goal: save the planet — one regrettable dessert at a time.
 </p>
 
 <p align="center">
-  When that dream… melted, we pivoted.
+  That didn't really work out. </br>
+  So we pivoted.
 </p>
 
 <p align="center">
-  Now, we build tools for modern network automation, observability, and distributed diagnostics.
+  Now it’s a tool for formatting MAC addresses. </br>
+  Because apparently, no two vendors can agree on what a colon is.
 </p>
 
 <p align="center">
   Still trying to save the world. </br>
-  Just with less shit.
+  Just with slightly less shit.
 </p>
 
 <hr>
