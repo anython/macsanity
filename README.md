@@ -60,7 +60,7 @@ Available formats:<br>
 ### Example usage:
 
 ```
-macinsanity abcdef123456 -f dot
+mac_formatter abcdef123456 -f dot
 ```
 
 output:
