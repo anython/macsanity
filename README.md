@@ -7,12 +7,6 @@ A dangerously friendly tool to convert MAC addresses into whatever weird format 
 <h2 align="center">🧵 Our Story</h2>
 
 <p align="center">
-  <strong>macinsanity</strong> began as a failed compost popsicle startup under the name
-  <br />
-  <strong><i>TurdVendor – Where ethics meets excrement.</i></strong>
-</p>
-
-<p align="center">
   macsanity began as a failed compost popsicle startup - under the name Turdvendor.
   Our goal was to save the earth — one regrettable dessert at a time.
 </p>
