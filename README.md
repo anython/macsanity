@@ -9,6 +9,7 @@ A dangerously friendly tool to convert MAC addresses into whatever weird format 
 <p align="center">
   <strong>macsanity</strong> started as an idea for compostable popsicles. </br>
   The working title was <strong>TurdVendor</strong>. </br>
+  <i>Where ethics meets excrement.</i></br>
   Goal: save the planet — one regrettable dessert at a time.
 </p>
 
