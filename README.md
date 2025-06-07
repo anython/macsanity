@@ -61,7 +61,7 @@ Available formats:<br>
 ### Example usage:
 
 ```
-mac_formatter abcdef123456 -f dot
+macsanity abcdef123456 -f dot
 ```
 
 output:
@@ -73,7 +73,7 @@ abcd.ef12.3456
 There is also a shorter alias:
 
 ```
-macf abcd.ef12.3456 -f colon -u
+mcs abcd.ef12.3456 -f colon -u
 ```
 
 output:
@@ -85,10 +85,10 @@ AB:CD:EF:12:34:56
 ## How to use in your code
 
 ```python
-from macinsanity import MacFormatter
+from macsanity import MacSanity
 
 mac_address = 'ab:cd:ef:12:34:56'
-mac = MacFormatter(mac_address)
+mac = MacSanity(mac_address)
 
 print(mac.dot)
 print(mac.dash)
@@ -120,9 +120,8 @@ ab12.cd34.fffe.ef56
 654321fedcba  
 ɓɐ ɟǝ pɔ ʞɾ ᴉu  
 ```
-
 <hr>
 <p align="center">
-  <i>macsanity is proudly built by <strong>anython</strong>.</i><br />
+  <i>macsanity is proudly built by <a href="https://anython.dev" target="_blank"><strong>anython</strong></a>.</i><br />
   Because someone had to.
 </p>
