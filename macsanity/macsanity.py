@@ -2,6 +2,7 @@ import re
 import base64
 import asyncio
 from typing import Optional
+import os
 
 class MacSanity:
     r"""
@@ -182,10 +183,20 @@ class MacSanity:
         loop = asyncio.get_running_loop()
         return await loop.run_in_executor(None, self.format_mac, delimiter, segment_length, length_mod, step_size)
 
-def convert_macs_in_file(input_path: str, target_format: str):
+def convert_macs_in_file(input_path: str, target_format: str, output_path: Optional[str] = None):
     """
+    -------
+    Please note:
+        This function is experimental and might not cover all edge cases or file types. Use with care — and ideally on backup copies.
+    -------
     Finds all MAC addresses in a file and replaces them with a specified format.
-    Overwrites the original file with the updated content.
+    Writes the result to a new file instead of overwriting the original.
+
+    Args:
+        input_path (str): Path to the input file.
+        target_format (str): Format to convert MACs into (e.g., 'colon', 'dot').
+        output_path (str, optional): Path to save the updated file.
+            If not provided, will write to '<original>_converted.txt' in the same directory.
     """
     mac_pattern = re.compile(r'(?<![\w])(?:[0-9a-fA-F]{2}[-:\.\s]?){5}[0-9a-fA-F]{2}(?![\w])|[0-9a-fA-F]{4}\.[0-9a-fA-F]{4}\.[0-9a-fA-F]{4}')
 
@@ -194,7 +205,7 @@ def convert_macs_in_file(input_path: str, target_format: str):
 
     def format_found_mac(mac_str):
         try:
-            formatter = MacFormatter(mac_str)
+            formatter = MacSanity(mac_str)
             return getattr(formatter, target_format)
         except Exception:
             return mac_str
@@ -208,7 +219,11 @@ def convert_macs_in_file(input_path: str, target_format: str):
             updated_line = updated_line.replace(raw_mac, formatted_mac)
         updated_lines.append(updated_line)
 
-    with open(input_path, 'w', encoding='utf-8') as f:
+    if not output_path:
+        base, ext = os.path.splitext(input_path)
+        output_path = f"{base}_converted{ext or '.txt'}"
+
+    with open(output_path, 'w', encoding='utf-8') as f:
         f.writelines(updated_lines)
 
-    print(f"✅ Converted all MACs in '{input_path}' to format: {target_format}")
+    print(f"✅ Converted MACs saved to: {output_path}")
