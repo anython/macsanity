@@ -20,12 +20,8 @@ A dangerously friendly tool to convert MAC addresses into whatever weird format 
 </p>
 
 <p align="center">
-  Still trying to save the world.
+  Still trying to save the world. </br>
   Just with less shit.
-</p>
-
-<p align="center">
-  <strong>Because even when things go upside down... we format.</strong> 🌀
 </p>
 
 <hr>
