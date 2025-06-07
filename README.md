@@ -13,26 +13,21 @@ A dangerously friendly tool to convert MAC addresses into whatever weird format 
 </p>
 
 <p align="center">
-  Our goal was to save the planet — one regrettable dessert at a time.<br />
-  But the world wasn’t ready for biodegradable popsicles.<br />
-  That dream... melted.
+  macsanity began as a failed compost popsicle startup - under the name Turdvendor.
+  Our goal was to save the earth — one regrettable dessert at a time.
 </p>
 
 <p align="center">
-  So we pivoted.
+  When that dream… melted, we pivoted.
 </p>
 
 <p align="center">
-  Today, <strong>macinsanity</strong> is dedicated to cleaning up the mess left by vendors who can't seem to agree
-  on the <em>"right"</em> way to format MAC addresses.<br />
-  Colons? Dots? Dashes? No delimiter at all?<br />
-  We don’t judge — we just format.
+  Now, we build tools for modern network automation, observability, and distributed diagnostics.
 </p>
 
 <p align="center">
-  Still trying to save the world.<br />
-  Still knee-deep in MAC-address chaos.<br />
-  We just changed flavors.
+  Still trying to save the world.
+  Just with less shit.
 </p>
 
 <p align="center">
