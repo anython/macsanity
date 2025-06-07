@@ -7,7 +7,7 @@ A dangerously friendly tool to convert MAC addresses into whatever weird format 
 <h2 align="center">🧵 Our Story</h2>
 
 <p align="center">
-  macinsanity started as an idea for compostable popsicles. </br>
+  <strong>macsanity</strong> started as an idea for compostable popsicles. </br>
   The working title was <strong>TurdVendor</strong>. </br>
   Goal: save the planet — one regrettable dessert at a time.
 </p>
