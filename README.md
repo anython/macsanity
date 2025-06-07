@@ -8,8 +8,9 @@ A dangerously friendly tool to convert MAC addresses into whatever weird format 
 
 <p align="center">
   <strong>macsanity</strong> started as an idea for compostable popsicles. </br>
-  The working title was</br>
-  <strong>TurdVendor</strong> - <i>Where ethics meets excrement.</i></br>
+  The working title was..</br>
+  <strong>TurdVendor</strong> - <i>Where ethics meets excrement.</i></br></br>
+  
   Goal: save the planet — one regrettable dessert at a time.
 </p>
 
