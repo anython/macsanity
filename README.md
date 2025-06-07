@@ -1,4 +1,4 @@
-macinsanity
+macsanity
 ======
 A dangerously friendly tool to convert MAC addresses into whatever weird format the world throws at you.  
 <br />  
@@ -119,6 +119,6 @@ ab12.cd34.fffe.ef56
 
 <hr>
 <p align="center">
-  <i>macinsanity is proudly built by <strong>thamuppet</strong>.</i><br />
+  <i>macsanity is proudly built by <strong>thamuppet</strong>.</i><br />
   Because someone had to.
 </p>
